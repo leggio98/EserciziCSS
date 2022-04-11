@@ -1,0 +1,185 @@
+body {
+    box-sizing: border-box;
+    font-size: 65%;
+}
+
+.calculator {
+    width: 300px;
+    height: 300px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    display: grid;
+    box-shadow: 0px 0px 3px 1px  rgb(182, 181, 181);
+    border-radius: 5px;
+    grid-template-areas:
+            "resultg resultg resultg resultg"
+            "plusg minusg perg divg"
+            "7g 8g 9g equalg"
+            "4g 5g 6g equalg"
+            "1g 2g 3g equalg"
+            "0g dotg ACg equalg";
+}
+
+.calculator div {
+    text-align: center;
+}
+
+.result {
+    grid-area: resultg;
+    background-color: rgb(60,60,60);
+    color: white;
+    font-size: 2rem;
+    text-align: right !important;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5px;
+}
+.textstyle {
+    font-size: 1.5rem;
+    color:black ;
+    font-weight: bold;
+    
+}
+
+.symbolbg {
+    background-color: rgb(200, 216, 232) ;
+}
+
+.t {
+    border-top: solid 1.5px grey;
+}
+
+.b {
+    border-bottom: solid 1.5px grey;
+}
+
+.l {
+    border-left: solid 1.5px grey;
+}
+.r {
+    border-right: solid 1.5px gray;
+}
+
+.equal {
+    background-color: rgb(253, 122, 108);
+    grid-area: equalg;
+    border-bottom-right-radius: 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.minus {
+    grid-area: minusg;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.per {
+    grid-area: perg;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.division {
+    grid-area: divg;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.seven {
+    grid-area: 7g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.eight {
+    grid-area: 8g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nine {
+    grid-area: 9g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.four {
+    grid-area: 4g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.five {
+    grid-area: 5g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.six {
+    grid-area: 6g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    grid-area: 1g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.two {
+    grid-area: 2g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.three {
+    grid-area: 3g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.zero {
+    grid-area: 0g;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    grid-area: dotg;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.AC {
+    grid-area: ACg;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.plus {
+    grid-area: plusg;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
